@@ -27,7 +27,7 @@ const Login = () => {
     if (!validate()) throw new Error("validation");
     await new Promise((r) => setTimeout(r, 1500));
     // Navigate after success animation
-    setTimeout(() => navigate("/"), 500);
+    setTimeout(() => navigate("/dashboard"), 500);
   };
 
   const onFormSubmit = (e: FormEvent) => {
