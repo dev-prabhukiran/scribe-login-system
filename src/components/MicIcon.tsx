@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const MicIcon = () => (
+const MicIcon = ({ size = 32 }: { size?: number }) => (
   <motion.div
     initial={{ opacity: 0, scale: 0.8 }}
     animate={{ opacity: 1, scale: 1 }}
@@ -8,8 +8,8 @@ const MicIcon = () => (
     className="animate-icon-glow inline-flex"
   >
     <svg
-      width="32"
-      height="32"
+      width={size}
+      height={size}
       viewBox="0 0 24 24"
       fill="none"
       stroke="hsl(var(--primary))"
